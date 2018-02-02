@@ -1,0 +1,88 @@
+html{
+    background: #f2f2f2;
+    height:2000px;
+}
+header{
+    width: 100%;
+    height: 54px;
+    background-color: #3b3e47;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ececee;
+    z-index: 2;
+}
+header .m-logo{
+    position: absolute;
+    left:6%;
+}
+header .m-logo a{
+    color: #fff;
+    font-size: 20px;
+    height: 54px;
+    line-height: 54px;
+}
+header nav{
+    float: right;
+    padding-right: 10px;
+}
+header > nav > ul > li{
+    float: left;
+    position: relative;
+    line-height: 54px;
+}
+header > nav > ul > li >a{
+    color: #ececee;
+    padding: 0 15px;
+}
+header nav > ul > li .li-inside {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+header nav>ul>li .li-inside>li a {
+    text-align: center;
+    width: 100%;
+    color: #ececee;
+    background-color: #3b3e47;
+    line-height: 54px;
+    display: block;
+    height: 54px;
+}
+header nav > ul > li:hover .li-inside{
+    visibility:visible;
+    opacity: 1;
+}
+.m-input {
+    float: right;
+    height: 54px;
+    padding: 11px 10px;
+    box-sizing: border-box;
+}
+.m-input input[type=text]{
+    float: left;
+    border: none;
+    width: 180px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    padding: 0 5px;
+    font-size: 15px;
+    height: 32px;
+    background-color: #555;
+}
+.m-input input[type=submit]{
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: url(/images/gsearch-sprite.png) #555;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+}
