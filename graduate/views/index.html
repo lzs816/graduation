@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lzs的个人博客</title>
     <link rel="icon" href="/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_559130_f21vhtjwvjvmquxr.css">
 </head>
 
 <body>
@@ -25,6 +26,7 @@
                     <input type="text" placeholder="search" name="keyword">
                     <input type="submit" value="">
                 </form>
+                <div class="iconfont icon-pin" id="icon-pin"></div>
             </div>
             <nav class="m-nav">
                 <ul>
@@ -61,13 +63,37 @@
                     </li>
                 </ul>
             </nav>
+
         </header>
         <div class="g-bd">
-            <div class="g-top"></div>
+            <div class="g-top">
+
+            </div>
             <div class="g-main"></div>
         </div>
         <footer></footer>
     </div>
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/vconsole.min.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script>
+        var vConsole = new VConsole();
+        console.log('Hello world');
+        // var url = 'https://lab-dev.1tai.com/course/res/single-course-kimiwonosete/lesson-1/vzp.mp4';
+        // function showVideo(videoUrl) {
+        //     var div = $('<div class="video-container"></div>');
+        //     $('.g-top').append(div);
+        //     var video = $('<video class="lesson-video" controls></video>');
+        //     video.attr('src', videoUrl);
+        //     // video.canplay(function(){
+        //         div.append(video);
+        //         if ($('video')[0]) {
+        //             $('video')[0].play();
+        //         }
+        //     // });
+        // };
+        // showVideo(url);
+    </script>
 </body>
 
 </html>

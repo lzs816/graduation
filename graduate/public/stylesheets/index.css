@@ -1,12 +1,7 @@
-html{
-    background: #f2f2f2;
-    height:2000px;
-}
 header{
     width: 100%;
     height: 54px;
     background-color: #3b3e47;
-    position: fixed;
     top: 0;
     left: 0;
     color: #ececee;
@@ -59,6 +54,11 @@ header nav > ul > li:hover .li-inside{
     height: 54px;
     padding: 11px 10px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.m-input form{
+    margin-right: 10px;
 }
 .m-input input[type=text]{
     float: left;
@@ -74,7 +74,6 @@ header nav > ul > li:hover .li-inside{
     background-color: #555;
 }
 .m-input input[type=submit]{
-    float: left;
     display: inline-block;
     cursor: pointer;
     border: none;
@@ -85,4 +84,21 @@ header nav > ul > li:hover .li-inside{
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
+}
+.m-input .iconfont{
+    display: inline-block;
+    transform: rotate(-135deg);
+    color: #fff;
+    font-size: 20px;
+}
+.m-input .iconfont:hover{
+    cursor: pointer;
+}
+.m-input .iconfont{
+    transition: 0.5s;
+}
+.g-bd .g-top{
+    margin:100px auto;
+    height: 1500px;
+    width: 100%;
 }
