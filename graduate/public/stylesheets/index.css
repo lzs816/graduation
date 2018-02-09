@@ -3,7 +3,6 @@ header{
     height: 54px;
     background-color: #3b3e47;
     top: 0;
-    left: 0;
     color: #ececee;
     z-index: 2;
 }
@@ -31,23 +30,31 @@ header > nav > ul > li >a{
     padding: 0 15px;
 }
 header nav > ul > li .li-inside {
-    visibility: hidden;
-    position: absolute;
     width: 100%;
-    opacity: 0;
+    background-color: #3b3e47;
+}
+header nav>ul>li .li-inside>li{
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition:  .5s linear;
 }
 header nav>ul>li .li-inside>li a {
-    text-align: center;
     width: 100%;
-    color: #ececee;
-    background-color: #3b3e47;
-    line-height: 54px;
-    display: block;
-    height: 54px;
+    height: 100%;
+    color: #fff;
+}
+header nav > ul > li:hover .li-inside>li{
+    overflow: visible;
+    height: 36px;
 }
 header nav > ul > li:hover .li-inside{
-    visibility:visible;
-    opacity: 1;
+    padding-bottom: 20px;
+}
+header nav>ul>li .li-inside>li a:hover{
+    color:#00FFFF;
+    border-bottom:1px solid #00FFFF;
 }
 .m-input {
     float: right;
@@ -79,7 +86,7 @@ header nav > ul > li:hover .li-inside{
     border: none;
     width: 32px;
     height: 32px;
-    background: url(/images/gsearch-sprite.png) #555;
+    background: url('/images/gsearch-sprite.png') #555;
     transition: all .5s;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
@@ -95,10 +102,12 @@ header nav > ul > li:hover .li-inside{
     cursor: pointer;
 }
 .m-input .iconfont{
-    transition: 0.5s;
+    transition: .5s;
 }
 .g-bd .g-top{
-    margin:100px auto;
-    height: 1500px;
     width: 100%;
+    height:44vh;
+    min-height: 300px;
+    background: url('../images/bg.jpg') center no-repeat;
+    background-size: cover;
 }
