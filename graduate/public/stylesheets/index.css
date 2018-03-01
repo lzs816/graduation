@@ -111,3 +111,37 @@ header nav>ul>li .li-inside>li a:hover{
     background: url('../images/bg.jpg') center no-repeat;
     background-size: cover;
 }
+.g-main{
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background: #000;
+}
+.g-main video{
+    z-index: 0;
+        /* height: 90%;
+        width: 90%; */
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom:0;
+        margin:auto;
+}
+.g-main .m-close{
+    width: 30/178rem;
+    height:30/178rem;
+    z-index: 2;
+    position: absolute;
+    top:3%;
+    right:1.5%;
+    border:1px solid #f7a118;
+    text-align: center;
+    line-height: 27/178rem;
+    font-size: 20px;
+}
